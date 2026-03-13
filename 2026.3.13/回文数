@@ -1,5 +1,5 @@
          #转字符串反转
-def isPalindrome(x:int)->bool:
+def isPalindrome_str(x:int)->bool:
                  #isPalindrome 是函数名，意思是 是回文数吗？
                  #x:int  参数x为整数类型
                  #->bool  函数返回布尔值
@@ -16,7 +16,7 @@ def isPalindrome(x:int)->bool:
 
 
          #数学反转  
-def isPalindrome(x:int)->bool:
+def isPalindrome_math(x:int)->bool:
     if x<0 or(x!=0 and x%10==0):
         return False 
     reversed_num=0
@@ -27,3 +27,4 @@ def isPalindrome(x:int)->bool:
                  #第一次循环  x%10=1 reversed_num=0*10+1=1 x=1221//10=122
                  #第二次循环  x%10=2 reversed_num=1*10+2=12 x=122//10=12
     return x==reversed_num or x==reversed_num//10   #x为奇数也不能落下            
+
